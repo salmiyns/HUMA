@@ -1,0 +1,45 @@
+<div class="page-section">
+
+                <div class="container-fluid page__container">
+                    
+                    <div   class="col-md-8 p-0 mx-auto">
+                    {{ form_start(form) }}
+                        <div class="page-separator">
+										<div class="page-separator__text"> Informations D'Inscription </div>
+				        </div>
+
+                        <div class="list-group list-group-form mb-0">
+                            <div class="list-group-item">
+                                <fieldset role="group" aria-labelledby="label-type" class="m-0 form-group">
+                                        <div class="alert alert-soft-warning">
+                                            <div class="d-flex flex-wrap align-items-start">
+                                                <div class="mr-8pt">
+                                                    <i class="material-icons">check</i>
+                                                </div>
+                                                <div class="flex" style="min-width: 180px">
+                                                    <small class="text-black-100">
+                                                        participer à la réalisation des cours. vous avez besoin d'une approbation du Propriétaire de la <strong> Réalisation </strong> ou de l'Administrateur .
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="form-row align-items-center">
+                                        <label for="payment_cc" id="label-type" class="col-md-3 col-form-label form-label">Realisaton</label>
+                                        <div role="group" aria-labelledby="label-type" class="col-md-9">
+                                            {{ form_widget(form.realisation) }}
+                                            
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            
+                            <div class="list-group-item text-center">
+                             <button class="btn btn-lg btn-accent">{{ button_label|default('Save') }}</button>
+                               
+                            </div>
+                        </div>
+
+                    {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>

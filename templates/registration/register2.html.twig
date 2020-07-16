@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Login</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
+
+		<!-- CSS Files -->
+    {% block stylesheets %}
+	                {{encore_entry_link_tags('app')}}
+                    {{encore_entry_link_tags('bootstrap')}}
+                    {{encore_entry_link_tags('atlantisCss')}}
+                    {{encore_entry_link_tags('fonts')}}
+
+
+    {% endblock %}
+	<!-- Fonts and icons -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Droid Sans', 'Droid Serif']
+    }
+  });
+</script>	  
+
+ 
+	
+
+ 
+</head>
+
+<body class="login">
+{% block body %}
+
+	 {{ include('registration/_form2.registration.html.twig') }}
+       
+ {% endblock %}
+</body>
+
+	<!--   Core JS Files   -->
+    {% block javascripts %}
+          {{ encore_entry_script_tags('app')}}
+          {{ encore_entry_script_tags('jquery')}}
+          {{ encore_entry_script_tags('popperjs')}}
+		  {{ encore_entry_script_tags('jquery-ui')}}
+		  {{ encore_entry_script_tags('jquery-ui-touch-punch')}}
+
+          {{ encore_entry_script_tags('atlantis')}}
+
+{% endblock %}
+
+
+
+</html>
